@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_500"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:ignore="MissingConstraints" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add movie"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/add_movie_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="38dp"
+        android:hint="Movie name"
+        android:paddingEnd="5dp"
+        android:paddingStart="35dp"
+        android:background="@drawable/rectangle_1"/>
+
+    <EditText
+        android:id="@+id/add_movie_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="17dp"
+        android:hint="Movie author"
+        android:paddingEnd="5dp"
+        android:paddingStart="35dp"
+        android:background="@drawable/rectangle_1"/>
+
+    <EditText
+        android:id="@+id/add_about_movie"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="11dp"
+        android:hint="About movie"
+        android:paddingEnd="5dp"
+        android:paddingStart="35dp"
+        android:background="@drawable/rectangle_1"/>
+
+    <EditText
+        android:id="@+id/add_movie_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="17dp"
+        android:hint="Movie date"
+        android:paddingEnd="5dp"
+        android:paddingStart="35dp"
+        android:background="@drawable/rectangle_1"/>
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/purple_500"
+        android:layout_marginTop="32dp"
+        android:layout_gravity="right"
+        android:layout_marginEnd="36dp"/>
+</LinearLayout>
